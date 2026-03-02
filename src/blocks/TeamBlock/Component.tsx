@@ -73,11 +73,11 @@ export const TeamBlockComponent: React.FC<TeamBlockProps> = async (props) => {
                   <div className="relative h-85 w-full overflow-hidden rounded-md transition-all duration-500 group-hover:h-[20rem] group-hover:rounded-xl border border-primary">
                     {imageUrl ? (
                       <Image
-                        className="border border-primary/60 border-2 h-full w-full object-cover object-top transition-all duration-500 hover:grayscale"
+                        className="border border-primary/60 border-2 h-full w-full object-cover object-top transition-all duration-500 hover:grayscale "
                         src={imageUrl}
                         alt={member.name || 'Team member'}
-                        width={800}
-                        height={1200}
+                        width={750}
+                        height={1280}
                       />
                     ) : (
                       <div className="h-full w-full bg-muted flex items-center justify-center">
