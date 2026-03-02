@@ -73,11 +73,11 @@ export const TeamBlockComponent: React.FC<TeamBlockProps> = async (props) => {
                   <div className="relative h-85 w-full overflow-hidden rounded-md transition-all duration-500 group-hover:h-[20rem] group-hover:rounded-xl border border-primary">
                     {imageUrl ? (
                       <Image
-                        className="h-full w-full object-cover object-top transition-all duration-500 hover:grayscale"
+                        className="border border-primary/60 border-2 h-full w-full object-cover object-top transition-all duration-500 hover:grayscale"
                         src={imageUrl}
                         alt={member.name || 'Team member'}
-                        width={826}
-                        height={1239}
+                        width={800}
+                        height={1200}
                       />
                     ) : (
                       <div className="h-full w-full bg-muted flex items-center justify-center">
@@ -88,14 +88,14 @@ export const TeamBlockComponent: React.FC<TeamBlockProps> = async (props) => {
 
                   <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
                     <div className="flex justify-between">
-                      <h3 className="text-lg font-semibold transition-all duration-500 group-hover:tracking-wider">
+                      <h3 className="text-2xl font-bold transition-all duration-500 group-hover:tracking-wider">
                         {member.name}
                       </h3>
                       <span className="text-xs text-muted-foreground">_0{index + 1}</span>
                     </div>
 
                     <div className="mt-1 flex items-center justify-between">
-                      <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                      <span className="text-muted-foreground inline-block translate-y-6 text-lg">
                         {member.position}
                       </span>
 
